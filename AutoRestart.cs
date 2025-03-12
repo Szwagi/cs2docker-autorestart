@@ -35,7 +35,7 @@ public class AutoRestartPlugin : BasePlugin
     
     private bool IsServerOutOfDate()
     {
-        var latestBuildVersion = File.ReadAllText("/repo/latest.txt").Trim();
+        var latestBuildVersion = File.ReadAllText("/watchdog/cs2/latest.txt").Trim();
         return _buildVersion != latestBuildVersion;
     }
 
